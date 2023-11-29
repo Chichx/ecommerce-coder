@@ -5,9 +5,7 @@ import { Link } from "react-router-dom";
 import { FaCartShopping } from "react-icons/fa6";
 
 export const CartWidget = () => {
-  const { items } = useContext(CartContext);
-
-  const totalItems = items.reduce((total, item) => total + item.quantity, 0);
+  const { totalItems } = useContext(CartContext);
 
   return (
     <Link to="/cart">

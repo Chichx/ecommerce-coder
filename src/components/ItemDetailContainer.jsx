@@ -8,8 +8,6 @@ export const ItemDetailContainer = () => {
   const [item, setItem] = useState(null);
   const { id } = useParams();
 
-  console.log(id);
-
   useEffect(() => {
     const db = getFirestore();
 
